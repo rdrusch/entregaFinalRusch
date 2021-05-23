@@ -221,9 +221,9 @@ header {
     margin-bottom: 2rem; }
   .contenedorNegro__parrafo {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
-    text-align: justify; }
+    text-align: center; }
     .contenedorNegro__parrafo a {
       text-decoration: underline;
       color: #00eeca;
@@ -241,9 +241,9 @@ header {
     margin-bottom: 2rem; }
   .contenedorVioleta__parrafo {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
-    text-align: justify; }
+    text-align: center; }
 
 /*ESTILOS PRODUCTOS MOBILE*/
 #sectionProductos {
@@ -324,12 +324,12 @@ header {
 #grillaNovedades {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 70% 15% 15%;
+  grid-template-rows: 70% 18% 12%;
   grid-template-areas: "articuloUno" "articuloDos" "aside";
   height: 100%; }
   #grillaNovedades .productosNuevos {
     grid-area: articuloUno;
-    margin-top: 1rem;
+    margin-top: 1%;
     background-color: #232323;
     color: #ffffff;
     padding: 3rem;
@@ -361,7 +361,7 @@ header {
         font-weight: 400; }
   #grillaNovedades .novedadesPersonalizado {
     grid-area: articuloDos;
-    margin-top: 1rem;
+    margin-top: 1%;
     background-color: #a17dcf;
     color: #ffffff;
     padding: 3rem; }
@@ -378,7 +378,7 @@ header {
       text-align: justify; }
   #grillaNovedades .sorteo {
     grid-area: aside;
-    margin-top: 1rem;
+    margin-top: 1%;
     background-color: #00eeca;
     color: #232323;
     padding: 3rem;
@@ -441,7 +441,14 @@ fieldset {
     text-align: center; }
   /*ESTILOS PRODUCTOS TABLET*/
   #sectionProductos .contenedorProducto__parrafo {
-    width: 90%; } }
+    width: 90%; }
+  /*ESTILOS NOVEDADES TABLET*/
+  #grillaNovedades {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 23% 17%; }
+    #grillaNovedades .productosNuevos__item {
+      width: 48%; } }
 
 /*DESKTOP*/
 @media only screen and (min-width: 992px) {

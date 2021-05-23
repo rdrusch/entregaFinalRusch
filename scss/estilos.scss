@@ -302,9 +302,9 @@ background-color: #ffffff;
         }
         &__parrafo{
             color: #ffffff;
-            font-size: 12px;
+            font-size: 14px;
             width: 100%;
-            text-align: justify;
+            text-align: center;
 
                 a{
                     text-decoration: underline;
@@ -328,9 +328,9 @@ background-color: #ffffff;
         }
         &__parrafo{
             color: #ffffff;
-            font-size: 12px;
+            font-size: 14px;
             width: 100%;
-            text-align: justify;
+            text-align: center;
         }
 }
 
@@ -451,7 +451,7 @@ background-color: #ffffff;
 #grillaNovedades{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70% 15% 15%;
+    grid-template-rows: 70% 18% 12%;
     grid-template-areas: 
                         "articuloUno"
                         "articuloDos"
@@ -460,7 +460,7 @@ background-color: #ffffff;
 
         .productosNuevos{
             grid-area: articuloUno;
-            margin-top:1rem;
+            margin-top:1%;
             background-color: #232323;
             color: #ffffff;
             padding: 3rem;
@@ -501,7 +501,7 @@ background-color: #ffffff;
         }
         .novedadesPersonalizado{
             grid-area: articuloDos;
-            margin-top:1rem;
+            margin-top:1%;
             background-color: #a17dcf;
             color: #ffffff;
             padding: 3rem;
@@ -523,7 +523,7 @@ background-color: #ffffff;
         }
         .sorteo{
             grid-area: aside;
-            margin-top:1rem;
+            margin-top:1%;
             background-color: #00eeca;
             color: #232323;
             padding: 3rem;
@@ -652,7 +652,20 @@ fieldset{
     }
 }
 
+/*ESTILOS NOVEDADES TABLET*/ 
 
+#grillaNovedades{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 23% 17%;
+
+            .productosNuevos{
+
+                &__item{
+                    width: 48%;
+                }
+            }
+}
 
 
 
