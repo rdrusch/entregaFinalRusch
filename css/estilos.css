@@ -1,0 +1,684 @@
+/*ESTILOS GENERALES CELULARES-MOBILE FIRST*/
+body {
+  background-color: #ffffff;
+  color: #232323;
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background: linear-gradient(0deg, #22c1c3 0%, #6ec093 57%, #fdbf2d 100%);
+  display: grid;
+  grid-template-columns: 35% 40% 25%;
+  grid-template-rows: 100%;
+  grid-template-areas: "nav vacio logo";
+  position: inherit; }
+  header .contenedorLogo {
+    display: inherit;
+    position: absolute;
+    right: 15px;
+    top: 5px; }
+    header .contenedorLogo .logoHeader {
+      grid-area: logo;
+      width: 65px;
+      height: auto; }
+  header .navbar {
+    grid-area: nav;
+    background-color: transparent;
+    justify-content: center; }
+    header .navbar li {
+      margin: 0; }
+      header .navbar li a {
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 2px; }
+    header .navbar .navbar-toggler {
+      border: 0px; }
+    header .navbar .navbar-toggler:focus {
+      box-shadow: none; }
+
+.mainSecciones {
+  margin-top: 7rem; }
+  .mainSecciones .tituloSecciones {
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 7rem;
+    text-align: center; }
+
+/*ESTILOS FOOTER MOBILE*/
+.footer {
+  background-color: #232323;
+  height: 300px;
+  color: #ececec;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "contacto ubicacion" "redes redes"; }
+  .footer__contacto {
+    text-align: left;
+    grid-area: contacto; }
+    .footer__contacto p {
+      font-size: 11px; }
+    .footer__contacto h4 {
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 2rem; }
+  .footer__ubicacion {
+    text-align: left;
+    grid-area: ubicacion; }
+    .footer__ubicacion p {
+      font-size: 11px; }
+    .footer__ubicacion h4 {
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 2rem; }
+  .footer__redesSociales {
+    text-align: center;
+    grid-area: redes; }
+    .footer__redesSociales i {
+      color: #ececec;
+      font-size: 25px;
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+
+/*ESTILOS HOME CELULARES*/
+#mainHome {
+  margin-top: 1rem;
+  background-color: #ffffff; }
+
+.sectionBienvenidos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 25%;
+  grid-template-areas: "articulo" "carousel"; }
+  .sectionBienvenidos .articuloBienvenidos {
+    margin: 5rem 1rem 5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    grid-area: articulo; }
+    .sectionBienvenidos .articuloBienvenidos__titulo {
+      color: #232323;
+      font-weight: 900;
+      font-size: 40px;
+      text-align: center;
+      display: inline-block;
+      margin: 0;
+      width: 100%; }
+    .sectionBienvenidos .articuloBienvenidos__parrafo {
+      margin: 2rem 1.5rem 2rem 1.5rem;
+      display: inline-block;
+      font-size: 15px;
+      text-align: center; }
+    .sectionBienvenidos .articuloBienvenidos__boton {
+      margin-top: 2rem;
+      font-size: 17px;
+      font-weight: 600; }
+      .sectionBienvenidos .articuloBienvenidos__boton__link {
+        color: #232323;
+        font-weight: 800;
+        background-color: #ff7f58;
+        border: 0.5px solid;
+        border-color: #232323;
+        border-radius: 3px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+        padding: 0.5rem;
+        transition: all 0.3s; }
+  .sectionBienvenidos #carouselExampleInterval {
+    grid-area: carousel; }
+
+.contenedorVioletaHome {
+  background-color: #a17dcfa6;
+  color: #ffffff;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap; }
+  .contenedorVioletaHome__articulo {
+    margin-top: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #a17dcf;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedorVioletaHome__articulo h2 {
+      color: #232323;
+      font-size: 15px;
+      margin: 1rem 0rem 1rem 0rem;
+      font-weight: 800; }
+    .contenedorVioletaHome__articulo p {
+      text-align: center;
+      font-size: 15px; }
+    .contenedorVioletaHome__articulo i {
+      color: aquamarine;
+      font-size: 75px;
+      margin: 2rem 0rem 2rem 0rem; }
+  .contenedorVioletaHome__titulo {
+    color: #a17dcf;
+    font-weight: 900;
+    width: 75%;
+    text-align: center; }
+  .contenedorVioletaHome__parrafo {
+    margin-top: 3rem;
+    width: 70%; }
+
+.contenedorNaranjaHome {
+  background-color: #ff7f58;
+  color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  height: 1000px; }
+  .contenedorNaranjaHome__articulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+    .contenedorNaranjaHome__articulo__titulo {
+      margin: 3rem 0rem 3rem 0rem;
+      font-size: 35px;
+      font-weight: 700;
+      color: #232323; }
+    .contenedorNaranjaHome__articulo__parrafo {
+      font-size: 12.5px;
+      text-align: justify;
+      word-spacing: -1px; }
+    .contenedorNaranjaHome__articulo__imagen {
+      margin-bottom: 4rem; }
+      .contenedorNaranjaHome__articulo__imagen img {
+        width: 100%;
+        height: auto; }
+    .contenedorNaranjaHome__articulo i {
+      margin-top: 3rem;
+      font-size: 13px; }
+
+/*ESTILOS SERVICIOS MOBILE*/
+.contenedorServicios {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.contenedorNegro {
+  padding: 2rem;
+  background-color: #232323;
+  margin-bottom: 1rem; }
+  .contenedorNegro__titulo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #a17dcf;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .contenedorNegro__parrafo {
+    color: #ffffff;
+    font-size: 12px;
+    width: 100%;
+    text-align: justify; }
+    .contenedorNegro__parrafo a {
+      text-decoration: underline;
+      color: #00eeca;
+      font-weight: 700; }
+
+.contenedorVioleta {
+  padding: 2rem;
+  background-color: #a17dcf;
+  margin-bottom: 1rem; }
+  .contenedorVioleta__titulo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .contenedorVioleta__parrafo {
+    color: #ffffff;
+    font-size: 12px;
+    width: 100%;
+    text-align: justify; }
+
+/*ESTILOS PRODUCTOS MOBILE*/
+#sectionProductos {
+  margin: 0rem 3rem 5rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  #sectionProductos .contenedorProducto {
+    width: 100%;
+    margin-bottom: 5rem; }
+    #sectionProductos .contenedorProducto__div {
+      width: 100%; }
+      #sectionProductos .contenedorProducto__div__img {
+        width: 100%; }
+    #sectionProductos .contenedorProducto__encabezado {
+      background-color: #a17dcf;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      font-size: 22px;
+      font-weight: 600;
+      width: 100%;
+      text-align: center; }
+    #sectionProductos .contenedorProducto__parrafo {
+      width: 100%; }
+      #sectionProductos .contenedorProducto__parrafo__lista {
+        margin-top: 2rem;
+        padding: 0; }
+        #sectionProductos .contenedorProducto__parrafo__lista__item {
+          list-style-type: none;
+          margin-top: 1rem;
+          text-align: justify; }
+          #sectionProductos .contenedorProducto__parrafo__lista__item span {
+            font-style: italic;
+            font-size: 12px;
+            color: #232323b9; }
+
+/*ESTILOS GALERIA MOBILE*/
+#videosGaleria {
+  margin-bottom: 3rem;
+  background-color: #00eeca;
+  display: flex;
+  justify-content: center; }
+  #videosGaleria video {
+    width: 100%; }
+
+#grillaImagenesGaleria {
+  margin: 0% 5% 5% 5%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 19% 19% 19% 19% 19%;
+  grid-template-areas: "fotoGrandeUno fotoGrandeUno fotoChicaUno" "fotoGrandeUno fotoGrandeUno fotoChicaDos" "fotoChicaTres fotoGrandeDos fotoGrandeDos" "fotoChicaCuatro fotoGrandeDos fotoGrandeDos" "fotoChicaCinco fotoChicaSeis fotoChicaSiete";
+  grid-column-gap: 1.5%;
+  grid-row-gap: 1.25%; }
+  #grillaImagenesGaleria img {
+    width: 100%;
+    height: 100%; }
+  #grillaImagenesGaleria .fotoGrandeUno {
+    grid-area: fotoGrandeUno; }
+  #grillaImagenesGaleria .fotoGrandeDos {
+    grid-area: fotoGrandeDos; }
+  #grillaImagenesGaleria .fotoChicaUno {
+    grid-area: fotoChicaUno; }
+  #grillaImagenesGaleria .fotoChicaDos {
+    grid-area: fotoChicaDos; }
+  #grillaImagenesGaleria .fotoChicaTres {
+    grid-area: fotoChicaTres; }
+  #grillaImagenesGaleria .fotoChicaCuatro {
+    grid-area: fotoChicaCuatro; }
+  #grillaImagenesGaleria .fotoChicaCinco {
+    grid-area: fotoChicaCinco; }
+  #grillaImagenesGaleria .fotoChicaSeis {
+    grid-area: fotoChicaSeis; }
+  #grillaImagenesGaleria .fotoChicaSiete {
+    grid-area: fotoChicaSiete; }
+
+/*ESTILOS NOVEDADES MOBILE*/
+#grillaNovedades {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 15% 15%;
+  grid-template-areas: "articuloUno" "articuloDos" "aside";
+  height: 100%; }
+  #grillaNovedades .productosNuevos {
+    grid-area: articuloUno;
+    margin-top: 1rem;
+    background-color: #232323;
+    color: #ffffff;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    #grillaNovedades .productosNuevos__titulo {
+      color: #a17dcf;
+      font-size: 20px;
+      font-weight: 700;
+      width: 100%; }
+    #grillaNovedades .productosNuevos__subtitulo {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 600;
+      width: 100%; }
+    #grillaNovedades .productosNuevos__item {
+      width: 100%;
+      margin-top: 2rem; }
+      #grillaNovedades .productosNuevos__item img {
+        width: 100%;
+        height: auto; }
+      #grillaNovedades .productosNuevos__item p {
+        margin-top: 1rem;
+        font-size: 14px;
+        text-align: justify; }
+      #grillaNovedades .productosNuevos__item .tachado {
+        text-decoration: line-through;
+        font-weight: 400; }
+  #grillaNovedades .novedadesPersonalizado {
+    grid-area: articuloDos;
+    margin-top: 1rem;
+    background-color: #a17dcf;
+    color: #ffffff;
+    padding: 3rem; }
+    #grillaNovedades .novedadesPersonalizado h2 {
+      color: #232323;
+      font-size: 25px;
+      font-weight: 700; }
+    #grillaNovedades .novedadesPersonalizado h3 {
+      font-size: 17px;
+      color: #00eeca; }
+    #grillaNovedades .novedadesPersonalizado p {
+      margin-top: 1rem;
+      font-size: 14px;
+      text-align: justify; }
+  #grillaNovedades .sorteo {
+    grid-area: aside;
+    margin-top: 1rem;
+    background-color: #00eeca;
+    color: #232323;
+    padding: 3rem;
+    margin-bottom: 1rem; }
+    #grillaNovedades .sorteo h3 {
+      font-size: 17px;
+      color: #a17dcf;
+      font-weight: 800; }
+    #grillaNovedades .sorteo p {
+      margin-top: 1rem;
+      font-size: 14px;
+      text-align: justify; }
+
+/*ESTILOS CONTACTOS MOBILE*/
+.parrafoContacto {
+  margin: 0rem 2rem 4rem 2rem;
+  text-align: center;
+  font-weight: 600; }
+
+fieldset {
+  margin-bottom: 1rem; }
+
+.contactanosFormulario div {
+  margin: 1rem 0rem 1rem 0rem; }
+
+.contactanosFormulario .formularioCheckBox {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 2rem; }
+  .contactanosFormulario .formularioCheckBox label {
+    width: 75%; }
+
+/*TABLET*/
+@media only screen and (min-width: 768px) {
+  /*ESTILOS HOME TABLET*/
+  #mainHome {
+    margin-top: 0rem; }
+  .sectionBienvenidos {
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "carousel" "articulo"; }
+    .sectionBienvenidos .articuloBienvenidos {
+      margin-bottom: 0rem; }
+      .sectionBienvenidos .articuloBienvenidos__titulo {
+        font-size: 60px;
+        margin-top: 2rem;
+        margin-bottom: 1rem; }
+      .sectionBienvenidos .articuloBienvenidos__boton {
+        margin-top: 1rem; }
+  .contenedorVioletaHome {
+    margin-top: 1rem; }
+  .contenedorNaranjaHome__articulo__titulo {
+    font-size: 45px; }
+  .contenedorNaranjaHome__articulo__parrafo {
+    width: 75%;
+    font-size: 15px; }
+  .contenedorNaranjaHome__articulo__imagen {
+    width: 50%; }
+  .contenedorNaranjaHome__articulo i {
+    width: 100%;
+    text-align: center; }
+  /*ESTILOS PRODUCTOS TABLET*/
+  #sectionProductos .contenedorProducto__parrafo {
+    width: 90%; } }
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px) {
+  /*ESTILOS GENERALES DESKTOP*/
+  main {
+    margin-top: 15rem; }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 2; }
+    header .navbar {
+      background-color: #ffffff48;
+      width: 100%;
+      margin: 0; }
+    header #navbarNavAltMarkup {
+      width: 100%; }
+    header .contenedorLogo {
+      display: flex;
+      justify-content: center;
+      position: relative; }
+      header .contenedorLogo .logoHeader {
+        width: 25%;
+        margin: 0.5rem; }
+  .navbar-expand-lg {
+    margin: 0rem 1rem 0rem 1rem;
+    box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.315);
+    padding: 0; }
+    .navbar-expand-lg .navbar-collapse .navbar-nav {
+      width: 100%;
+      justify-content: center; }
+      .navbar-expand-lg .navbar-collapse .navbar-nav li {
+        width: 12%;
+        margin: 0.57% 0% 0.57% 0%;
+        text-align: center; }
+        .navbar-expand-lg .navbar-collapse .navbar-nav li a {
+          font-size: 13.5px;
+          font-weight: 600;
+          color: #ffffff; }
+  .mainSecciones {
+    margin-top: 15rem; }
+    .mainSecciones .tituloSecciones {
+      font-weight: 900;
+      font-size: 45px;
+      margin-bottom: 7rem;
+      text-align: center; }
+  .footer {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas: "contacto ubicacion redes";
+    height: auto; }
+    .footer__redesSociales i {
+      margin-top: 0rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+  /*ESTILOS HOME DESKTOP*/
+  #mainHome {
+    margin-top: 7rem; }
+  .sectionBienvenidos {
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "carousel" "articulo"; }
+    .sectionBienvenidos .articuloBienvenidos {
+      margin: 2rem 1rem 9rem 1rem; }
+      .sectionBienvenidos .articuloBienvenidos__titulo {
+        color: #232323;
+        font-size: 75px; }
+      .sectionBienvenidos .articuloBienvenidos__parrafo {
+        margin: 4rem 5rem 4rem 5rem;
+        font-size: 22px;
+        text-align: center; }
+      .sectionBienvenidos .articuloBienvenidos__boton {
+        font-size: 22px; }
+        .sectionBienvenidos .articuloBienvenidos__boton__link:hover {
+          background-color: #232323;
+          color: #ff7f58;
+          transition: all 0.5s; }
+  .contenedorVioletaHome {
+    justify-content: center;
+    height: 550px;
+    align-content: center;
+    margin-top: 5rem; }
+    .contenedorVioletaHome__articulo {
+      margin: 2rem 1rem 1rem 1rem;
+      width: 25%; }
+      .contenedorVioletaHome__articulo h2 {
+        text-align: center;
+        font-size: 20px;
+        margin: 1rem 0rem 1rem 0rem;
+        font-weight: 800; }
+      .contenedorVioletaHome__articulo p {
+        text-align: center;
+        font-size: 12.5px; }
+      .contenedorVioletaHome__articulo i {
+        color: aquamarine;
+        font-size: 75px;
+        margin: 2rem 0rem 2rem 0rem; }
+    .contenedorVioletaHome__titulo {
+      color: #a17dcf;
+      font-weight: 900;
+      width: 75%;
+      text-align: center; }
+    .contenedorVioletaHome__parrafo {
+      margin-top: 3rem;
+      width: 70%; }
+  .contenedorNaranjaHome {
+    padding: 3rem 0rem 0rem 0rem;
+    height: 558px; }
+    .contenedorNaranjaHome__articulo {
+      display: grid;
+      grid-template-columns: 65% 35%;
+      grid-template-rows: 30% 50% 20%;
+      grid-template-areas: "titulo imagen " "parrafo imagen" "corazon imagen";
+      justify-content: center;
+      align-content: center;
+      height: 100%; }
+      .contenedorNaranjaHome__articulo__titulo {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 35px;
+        font-weight: 700;
+        color: #ffffff;
+        grid-area: titulo; }
+      .contenedorNaranjaHome__articulo__parrafo {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+        text-align: justify;
+        word-spacing: -1px;
+        grid-area: parrafo; }
+      .contenedorNaranjaHome__articulo__imagen {
+        width: 100%;
+        height: auto;
+        grid-area: imagen; }
+        .contenedorNaranjaHome__articulo__imagen img {
+          width: 100%;
+          height: auto; }
+      .contenedorNaranjaHome__articulo i {
+        margin-top: 2rem;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+        grid-area: corazon; }
+  /*ESTILOS SERVICIOS DESKTOP*/
+  .contenedorServicios {
+    justify-content: space-evenly;
+    margin-bottom: 10rem; }
+  .contenedorNegro {
+    padding: 2rem;
+    background-color: #232323;
+    margin-bottom: 1rem;
+    width: 32%; }
+    .contenedorNegro__titulo {
+      font-size: 30px;
+      font-weight: 600;
+      color: #a17dcf;
+      text-align: center;
+      margin-bottom: 2rem; }
+    .contenedorNegro__parrafo {
+      color: #ffffff;
+      font-size: 12px;
+      width: 100%;
+      text-align: justify; }
+  .contenedorVioleta {
+    padding: 2rem;
+    background-color: #a17dcf;
+    margin-bottom: 1rem;
+    width: 32%; }
+    .contenedorVioleta__titulo {
+      font-size: 30px;
+      font-weight: 700;
+      color: #232323;
+      text-align: center;
+      margin-bottom: 2rem; }
+    .contenedorVioleta__parrafo {
+      color: #ffffff;
+      font-size: 12px;
+      width: 100%;
+      text-align: justify; }
+  /*ESTILOS PRODUCTOS DESKTOP*/
+  #sectionProductos {
+    margin-left: 5rem;
+    margin-right: 5rem; }
+    #sectionProductos .contenedorProducto {
+      width: 30%; }
+      #sectionProductos .contenedorProducto__encabezado {
+        color: #ffffff; }
+      #sectionProductos .contenedorProducto__parrafo {
+        width: 100%; }
+  /*ESTILOS NOVEDADES DESKTOP*/
+  #grillaNovedades {
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "articuloUno aside" "articuloDos aside";
+    margin-bottom: 1rem;
+    height: auto; }
+    #grillaNovedades .productosNuevos {
+      margin-right: 1rem; }
+      #grillaNovedades .productosNuevos__titulo {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center; }
+      #grillaNovedades .productosNuevos__subtitulo {
+        text-align: center; }
+      #grillaNovedades .productosNuevos__item {
+        width: 45%;
+        margin-top: 3rem; }
+        #grillaNovedades .productosNuevos__item p {
+          text-align: center; }
+    #grillaNovedades .novedadesPersonalizado {
+      margin-right: 1rem;
+      padding-top: 2rem; }
+      #grillaNovedades .novedadesPersonalizado h2 {
+        width: 100%;
+        text-align: center; }
+      #grillaNovedades .novedadesPersonalizado h3 {
+        margin: 2rem 0rem 1rem 0rem;
+        text-align: center; }
+      #grillaNovedades .novedadesPersonalizado p {
+        font-size: 12px;
+        margin: 1rem 4rem 0rem 4rem; }
+    #grillaNovedades .sorteo {
+      margin-bottom: 0rem; }
+      #grillaNovedades .sorteo p {
+        margin-top: 1rem;
+        font-size: 12px;
+        text-align: justify; }
+  /*ESTILOS CONTACTO DESKTOP*/
+  .parrafoContacto {
+    margin: 0rem 10rem 6rem 10rem; }
+  .contactanosFormulario .formularioCheckBox {
+    flex-wrap: wrap;
+    margin-bottom: 2rem; }
+    .contactanosFormulario .formularioCheckBox label {
+      width: 40%; } }

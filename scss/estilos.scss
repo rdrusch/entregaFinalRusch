@@ -1,0 +1,1046 @@
+/*ESTILOS GENERALES CELULARES-MOBILE FIRST*/
+body{
+    background-color: #ffffff;
+    color: #232323;
+    font-family: poppins, sans-serif;
+    margin:0;
+    padding:0;
+    }
+
+a{
+    text-decoration: none;
+}    
+
+header{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(110,192,147,1) 57%, rgba(253,191,45,1) 100%);
+    display: grid;
+    grid-template-columns: 35% 40% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+                        "nav vacio logo";
+    position: inherit;
+
+        .contenedorLogo{
+            display:inherit;
+            position:absolute;
+            right: 15px;
+            top: 5px;
+
+                .logoHeader{
+                grid-area: logo;
+                width: 65px;
+                height: auto;
+                
+
+    }
+}
+        .navbar{
+            grid-area: nav;
+            background-color: transparent;
+            justify-content: center;
+
+            li{
+                margin: 0;
+
+                    a{
+                        font-family: poppins, sans-serif;
+                        font-weight: 600;
+                        font-size: 17px;
+                        letter-spacing: 2px;
+                    }
+                   }
+
+                .navbar-toggler{
+                    border: 0px;
+                }
+
+                .navbar-toggler:focus{
+                    box-shadow: none;
+                }
+
+
+        }
+
+}
+.mainSecciones{
+    margin-top: 7rem;
+
+        .tituloSecciones{
+            font-weight: 900;
+            font-size: 45px;
+            margin-bottom: 7rem;
+            text-align: center;
+        }
+}
+
+/*ESTILOS FOOTER MOBILE*/
+.footer{
+    background-color: #232323;
+    height: 300px;
+    color: #ececec;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30% ;
+    grid-template-areas: 
+                        "contacto ubicacion"
+                        "redes redes";
+
+        &__contacto{
+            text-align: left;
+            grid-area: contacto;
+
+            p{
+                font-size: 11px;
+            }
+            h4{
+                font-size: 12px;
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__ubicacion{
+            text-align: left;
+            grid-area: ubicacion;
+
+            p{
+                font-size: 11px;
+            }
+            h4{
+                font-size: 12px;
+                margin-top: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__redesSociales{
+            text-align: center;
+            grid-area: redes;
+
+            i{
+                color: #ececec;
+                font-size: 25px;
+                margin-top: 2rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+/*ESTILOS HOME CELULARES*/ 
+
+#mainHome{
+margin-top: 1rem;
+background-color: #ffffff;
+}
+.sectionBienvenidos{
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 25%;
+    grid-template-areas: 
+                        "articulo"
+                        "carousel";
+    .articuloBienvenidos{
+        margin: 5rem 1rem 5rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        grid-area: articulo;
+
+            &__titulo{
+                color: #232323;
+                font-weight: 900;
+                font-size: 40px;
+                text-align: center;
+                display: inline-block;
+                margin:0;
+                width: 100%;
+            }
+
+            &__parrafo{
+                margin: 2rem 1.5rem 2rem 1.5rem;
+                display: inline-block;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            &__boton{
+                margin-top: 2rem;
+                font-size: 17px;
+                font-weight: 600;
+
+
+                    &__link{
+                        color:#232323; 
+                        font-weight: 800;
+                        background-color: #ff7f58;
+                        border: 0.5px solid;
+                        border-color: #232323;
+                        border-radius: 3px;
+                        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.288);
+                        padding: 0.5rem;
+                        transition: all 0.3s;
+                    }
+            }
+    }
+
+#carouselExampleInterval{
+    grid-area: carousel;
+}
+}
+.contenedorVioletaHome{
+    background-color: #a17dcfa6;
+    color: #ffffff;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+        &__articulo{
+            margin-top: 1rem;
+            padding: 1rem 2rem 1rem 2rem;
+            background-color: #a17dcf;
+            border-radius: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+                h2{
+                    color: #232323;
+                    font-size: 15px;
+                    margin: 1rem 0rem 1rem 0rem;
+                    font-weight: 800;
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 15px;
+                }
+
+                i{  
+                    color: aquamarine;
+                    font-size: 75px;
+                    margin: 2rem 0rem 2rem 0rem;
+                }
+        }
+        &__titulo{
+            color:#a17dcf;
+            font-weight: 900;
+            width: 75%;
+            text-align: center;
+        }
+        &__parrafo{
+            margin-top: 3rem;
+            width: 70%;
+        }
+    }
+
+
+.contenedorNaranjaHome{
+    background-color: #ff7f58;
+    color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    height: 1000px;
+
+        &__articulo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+                &__titulo{
+                    margin: 3rem 0rem 3rem 0rem;
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: #232323;
+                }
+
+                &__parrafo{
+                    font-size: 12.5px;
+                    text-align: justify;
+                    word-spacing: -1px;
+                }
+                &__imagen{
+                    margin-bottom: 4rem; 
+                        
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                }
+                i{
+                    margin-top: 3rem;
+                    font-size: 13px;
+                }
+        }
+}
+/*ESTILOS SERVICIOS MOBILE*/ 
+.contenedorServicios{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedorNegro{
+    padding: 2rem;
+    background-color: #232323;
+    margin-bottom: 1rem;
+
+        &__titulo{
+            font-size: 30px;
+            font-weight: 600;
+            color: #a17dcf;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &__parrafo{
+            color: #ffffff;
+            font-size: 12px;
+            width: 100%;
+            text-align: justify;
+
+                a{
+                    text-decoration: underline;
+                    color: #00eeca;
+                    font-weight: 700;
+                }
+        }
+}
+
+.contenedorVioleta{
+    padding: 2rem;
+    background-color: #a17dcf;
+    margin-bottom: 1rem;
+
+        &__titulo{
+            font-size: 30px;
+            font-weight: 700;
+            color: #232323;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &__parrafo{
+            color: #ffffff;
+            font-size: 12px;
+            width: 100%;
+            text-align: justify;
+        }
+}
+
+/*ESTILOS PRODUCTOS MOBILE*/ 
+#sectionProductos{
+    margin: 0rem 3rem 5rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+        .contenedorProducto{
+            width: 100%;
+            margin-bottom: 5rem;
+            
+
+                &__div{
+                    width: 100%;
+                    
+                        &__img{
+                            width: 100%;
+                        }
+                }
+                &__encabezado{
+                    background-color: #a17dcf;
+                    color: #ffffff;
+                    margin-bottom: 1rem;
+                    padding: 0.7rem;
+                    font-size: 22px;
+                    font-weight: 600;
+                    width: 100%;
+                    text-align: center;
+                }
+                &__parrafo{
+                    width: 100%;
+                    
+                    &__lista{
+                        margin-top: 2rem;
+                        padding: 0;
+
+                        &__item{
+                            list-style-type: none;
+                            margin-top: 1rem;
+                            text-align: justify;
+
+                            span{
+                                font-style: italic;
+                                font-size: 12px;
+                                color: #232323b9;
+                            }
+
+                        }
+                    }
+                }
+        }
+}
+
+/*ESTILOS GALERIA MOBILE*/ 
+#videosGaleria{
+    margin-bottom: 3rem;
+    background-color: #00eeca;
+    display: flex;
+    justify-content: center;
+
+        video{
+            width: 100%;
+        }
+}
+#grillaImagenesGaleria{
+    margin: 0% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 19% 19% 19% 19% 19%;
+    grid-template-areas: 
+                        "fotoGrandeUno fotoGrandeUno fotoChicaUno"
+                        "fotoGrandeUno fotoGrandeUno fotoChicaDos"
+                        "fotoChicaTres fotoGrandeDos fotoGrandeDos"
+                        "fotoChicaCuatro fotoGrandeDos fotoGrandeDos"
+                        "fotoChicaCinco fotoChicaSeis fotoChicaSiete";
+    grid-column-gap:1.5% ;
+    grid-row-gap: 1.25%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .fotoGrandeUno{
+                grid-area: fotoGrandeUno;
+            }
+            .fotoGrandeDos{
+                grid-area: fotoGrandeDos;
+            }
+            .fotoChicaUno{
+                grid-area: fotoChicaUno;
+            }
+            .fotoChicaDos{
+                grid-area: fotoChicaDos;
+            }
+            .fotoChicaTres{
+                grid-area: fotoChicaTres;
+            }
+            .fotoChicaCuatro{
+                grid-area: fotoChicaCuatro;
+            }
+            .fotoChicaCinco{
+                grid-area: fotoChicaCinco;
+            }
+            .fotoChicaSeis{
+                grid-area: fotoChicaSeis;
+            }
+            .fotoChicaSiete{
+                grid-area: fotoChicaSiete;
+            }
+        
+}
+
+/*ESTILOS NOVEDADES MOBILE*/ 
+#grillaNovedades{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 15% 15%;
+    grid-template-areas: 
+                        "articuloUno"
+                        "articuloDos"
+                        "aside";
+    height: 100%;
+
+        .productosNuevos{
+            grid-area: articuloUno;
+            margin-top:1rem;
+            background-color: #232323;
+            color: #ffffff;
+            padding: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+                &__titulo{
+                    color: #a17dcf;
+                    font-size: 20px;
+                    font-weight: 700;
+                    width: 100%;
+                }
+                &__subtitulo{
+                    color: #ffffff;
+                    font-size: 30px;
+                    font-weight: 600;
+                    width: 100%;
+                }
+                &__item{
+                    width: 100%;
+                    margin-top: 2rem;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        font-size: 14px;
+                        text-align: justify;
+                    }
+                    .tachado{
+                        text-decoration: line-through;
+                        font-weight: 400;
+                    }
+                }
+                
+        }
+        .novedadesPersonalizado{
+            grid-area: articuloDos;
+            margin-top:1rem;
+            background-color: #a17dcf;
+            color: #ffffff;
+            padding: 3rem;
+
+                h2{
+                    color: #232323;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                h3{
+                    font-size: 17px;
+                    color: #00eeca;
+                }
+                p{
+                    margin-top: 1rem;
+                    font-size: 14px;
+                    text-align: justify;
+                }
+        }
+        .sorteo{
+            grid-area: aside;
+            margin-top:1rem;
+            background-color: #00eeca;
+            color: #232323;
+            padding: 3rem;
+            margin-bottom: 1rem;
+
+
+                h3{
+                    font-size: 17px;
+                    color: #a17dcf;
+                    font-weight: 800;
+                }
+                p{
+                    margin-top: 1rem;
+                    font-size: 14px;
+                    text-align: justify;
+                }
+        }
+}
+
+/*ESTILOS CONTACTOS MOBILE*/
+.parrafoContacto{
+    margin: 0rem 2rem 4rem 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+fieldset{
+    margin-bottom: 1rem;
+}
+.contactanosFormulario{
+    div{
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .formularioCheckBox{
+        display: flex;
+        justify-content:start;
+        margin-bottom: 2rem;
+
+            label{
+                width: 75%;
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+@media only screen and (min-width:768px){
+
+    /*ESTILOS HOME TABLET*/ 
+        
+    #mainHome{
+        margin-top: 0rem;
+    }
+    .sectionBienvenidos{
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+                        "carousel"
+                        "articulo";
+
+                        
+    
+                        .articuloBienvenidos{
+
+                                 margin-bottom: 0rem;
+
+                                &__titulo{
+                                    font-size: 60px;
+                                    margin-top: 2rem;
+                                    margin-bottom: 1rem;
+                                }
+    
+                                &__boton{
+                                    margin-top: 1rem;
+                                }
+    
+    }
+    }
+
+.contenedorVioletaHome{
+    margin-top: 1rem;
+}
+
+.contenedorNaranjaHome{
+
+        &__articulo{
+
+                &__titulo{
+                    font-size: 45px;
+                }
+
+                &__parrafo{
+                    width: 75%;
+                    font-size: 15px;
+                }
+
+                &__imagen{
+                    width: 50%;
+                }
+
+                i{
+                    width: 100%;
+                    text-align: center;
+                }
+        }
+}
+
+
+/*ESTILOS PRODUCTOS TABLET*/ 
+
+#sectionProductos{
+
+    .contenedorProducto{
+
+        &__parrafo{
+            width: 90%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+    
+    }
+
+
+
+
+
+/*DESKTOP*/
+@media only screen and (min-width:992px){
+
+    /*ESTILOS GENERALES DESKTOP*/
+    main{
+        margin-top: 15rem;
+    }
+    
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 2;
+    
+        .navbar{
+            background-color: #ffffff48;
+            width: 100%;
+            margin: 0;
+
+        }
+
+        #navbarNavAltMarkup{
+            width: 100%;
+        }
+
+        .contenedorLogo{
+            display: flex;
+            justify-content: center;
+            position:relative;
+            
+    
+            .logoHeader{
+                width: 25%;
+                margin: 0.5rem;
+                }
+        }
+    
+        }
+
+.navbar-expand-lg {
+
+            margin: 0rem 1rem 0rem 1rem;
+            box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.315);
+            padding: 0;
+            .navbar-collapse {
+
+            .navbar-nav{
+                    width: 100%;
+                    justify-content: center;
+
+                        li{
+                            width: 12%;
+                            margin: 0.57% 0% 0.57% 0%;
+                            text-align: center;
+
+                                a{
+                                    font-size: 13.5px;
+                                    font-weight: 600;
+                                    color: #ffffff;
+                                }
+                        }
+            
+            }
+        }
+}
+
+.mainSecciones{
+    margin-top: 15rem;
+
+        .tituloSecciones{
+            font-weight: 900;
+            font-size: 45px;
+            margin-bottom: 7rem;
+            text-align: center;
+        }
+}
+
+.footer{
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100% ;
+    grid-template-areas: 
+                        "contacto ubicacion redes";
+    height: auto;
+
+        &__redesSociales{
+
+            i{
+                margin-top: 0rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+    
+    /*ESTILOS HOME DESKTOP*/ 
+    
+    #mainHome{
+        margin-top: 7rem;
+    }
+.sectionBienvenidos{
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+                        "carousel"
+                        "articulo";
+
+    .articuloBienvenidos{
+        margin: 2rem 1rem 9rem 1rem;
+    
+            &__titulo{
+                color: #232323;
+                font-size: 75px;
+            }
+    
+            &__parrafo{
+                margin: 4rem 5rem 4rem 5rem;
+                font-size: 22px;
+                text-align: center;
+            }
+    
+            &__boton{
+                font-size: 22px;
+    
+    
+                    &__link:hover{
+                        background-color: #232323;
+                        color: #ff7f58;
+                        transition: all 0.5s;
+                    }
+            }
+    }
+}
+    .contenedorVioletaHome{
+        justify-content: center;
+        height: 550px;
+        align-content: center;
+        margin-top: 5rem;
+    
+            &__articulo{
+                margin: 2rem 1rem 1rem 1rem;
+                width: 25%;
+    
+                    h2{
+                        text-align: center;
+                        font-size: 20px;
+                        margin: 1rem 0rem 1rem 0rem;
+                        font-weight: 800;
+                    }
+    
+                    p{
+                        text-align: center;
+                        font-size: 12.5px;
+                    }
+    
+                    i{  
+                        color: aquamarine;
+                        font-size: 75px;
+                        margin: 2rem 0rem 2rem 0rem;
+                    }
+            }
+            &__titulo{
+                color:#a17dcf;
+                font-weight: 900;
+                width: 75%;
+                text-align: center;
+            }
+            &__parrafo{
+                margin-top: 3rem;
+                width: 70%;
+            }
+        }
+
+
+.contenedorNaranjaHome{
+    padding: 3rem 0rem 0rem 0rem;
+    height: 558px;
+
+    &__articulo{
+        display: grid;
+        grid-template-columns: 65% 35% ;
+        grid-template-rows: 30% 50% 20%;
+        grid-template-areas:
+                            "titulo imagen "
+                            "parrafo imagen"
+                            "corazon imagen";
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+
+            &__titulo{
+                width: 100%;
+                text-align: center;
+                margin-top: 2rem;
+                font-size: 35px;
+                font-weight: 700;
+                color: #ffffff;
+                grid-area: titulo;
+            }
+
+            &__parrafo{
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 15px;
+                text-align: justify;
+                word-spacing: -1px;
+                grid-area: parrafo;
+
+            }
+            &__imagen{
+                width: 100%;
+                height: auto;
+                grid-area: imagen;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+            }
+            i{
+                margin-top: 2rem;
+                font-size: 13px;
+                text-align: center;
+                width: 100%;
+                grid-area: corazon;
+            }
+        }
+}
+
+/*ESTILOS SERVICIOS DESKTOP*/
+.contenedorServicios{
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+.contenedorNegro{
+    padding: 2rem;
+    background-color: #232323;
+    margin-bottom: 1rem;
+    width: 32%;
+
+        &__titulo{
+            font-size: 30px;
+            font-weight: 600;
+            color: #a17dcf;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &__parrafo{
+            color: #ffffff;
+            font-size: 12px;
+            width: 100%;
+            text-align: justify;
+        }
+}
+
+.contenedorVioleta{
+    padding: 2rem;
+    background-color: #a17dcf;
+    margin-bottom: 1rem;
+    width: 32%;
+
+        &__titulo{
+            font-size: 30px;
+            font-weight: 700;
+            color: #232323;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        &__parrafo{
+            color: #ffffff;
+            font-size: 12px;
+            width: 100%;
+            text-align: justify;
+        }
+}
+
+/*ESTILOS PRODUCTOS DESKTOP*/ 
+#sectionProductos{
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+        .contenedorProducto{
+            width: 30%;
+            
+                
+                &__encabezado{
+                    color: #ffffff;
+                }
+
+                &__parrafo{
+                    width: 100%;
+                }
+        }
+}
+
+/*ESTILOS NOVEDADES DESKTOP*/
+#grillaNovedades{
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+                        "articuloUno aside"
+                        "articuloDos aside";
+    margin-bottom: 1rem;
+    height: auto;
+            .productosNuevos{
+                    margin-right: 1rem;
+                    
+                    &__titulo{
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        text-align: center;
+                    }
+                    &__subtitulo{
+                        text-align: center;
+                    }
+                    &__item{
+                        width: 45%;
+                        margin-top: 3rem;
+
+                            p{
+                                text-align: center;
+                            }
+                    }
+            }
+            .novedadesPersonalizado{
+                margin-right: 1rem;
+                padding-top: 2rem;
+    
+                    h2{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    h3{
+                        margin: 2rem 0rem 1rem 0rem;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 12px;
+                        margin: 1rem 4rem 0rem 4rem;
+                    }
+            }
+            .sorteo{
+                margin-bottom: 0rem;
+
+                    p{
+                        margin-top: 1rem;
+                        font-size: 12px;
+                        text-align: justify;
+                    }
+            }
+}
+
+/*ESTILOS CONTACTO DESKTOP*/ 
+.parrafoContacto{
+    margin: 0rem 10rem 6rem 10rem;
+}
+.contactanosFormulario{
+.formularioCheckBox{
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+        label{
+            width: 40%;
+        }
+}
+}
+
+
+
+}
+
+
+
+
+
